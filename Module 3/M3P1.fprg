@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alani"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-28 05:25:43 PM"/>
+        <attribute name="created" value="YWxhbmk7QUxBTklTOzIwMjYtMDktMjg7MDU6MTY6MzIgUE07MjI0Nw=="/>
+        <attribute name="edited" value="YWxhbmk7QUxBTklTOzIwMjYtMDktMjg7MDU6MjU6NDMgUE07MTsyMzU3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="StockTicketSymbol" type="String" array="False" size=""/>
+            <input variable="StockTicketSymbol"/>
+            <declare name="NumberofShares" type="Real" array="False" size=""/>
+            <input variable="NumberofShares"/>
+            <declare name="CostperShare" type="Real" array="False" size=""/>
+            <input variable="CostperShare"/>
+            <declare name="AmountInvested" type="Real" array="False" size=""/>
+            <assign variable="AmountInvested" expression="NumberofShares*CostperShare"/>
+            <output expression="&quot;Invested amount is $&quot; &amp;AmountInvested" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

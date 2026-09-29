@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alani"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-28 06:47:33 PM"/>
+        <attribute name="created" value="YWxhbmk7QUxBTklTOzIwMjYtMDktMjg7MDY6Mzc6NTQgUE07MjI1NQ=="/>
+        <attribute name="edited" value="YWxhbmk7QUxBTklTOzIwMjYtMDktMjg7MDY6NDc6MzMgUE07MTsyMzYx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="LastName" type="String" array="False" size=""/>
+            <declare name="MidtermExamScore" type="Real" array="False" size=""/>
+            <declare name="FinalExamScore" type="Real" array="False" size=""/>
+            <input variable="LastName"/>
+            <input variable="MidtermExamScore"/>
+            <input variable="FinalExamScore"/>
+            <declare name="TotalExamPoints" type="Real" array="False" size=""/>
+            <assign variable="TotalExamPoints" expression="0.40*MidtermExamScore+0.60*FinalExamScore"/>
+            <output expression="&quot;Total exam points for &quot; &amp;LastName &amp; &quot; is &quot;&amp;TotalExamPoints" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
