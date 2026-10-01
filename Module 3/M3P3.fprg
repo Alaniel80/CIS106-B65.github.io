@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alani"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-30 07:36:22 PM"/>
+        <attribute name="created" value="YWxhbmk7QUxBTklTOzIwMjYtMDktMzA7MDc6MDI6MTAgUE07MjIzMw=="/>
+        <attribute name="edited" value="YWxhbmk7QUxBTklTOzIwMjYtMDktMzA7MDc6MzY6MjIgUE07MjsyMzUy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="AmountPerson1" type="Real" array="False" size=""/>
+            <input variable="AmountPerson1"/>
+            <declare name="AmountPerson2" type="Real" array="False" size=""/>
+            <input variable="AmountPerson2"/>
+            <declare name="AmountPerson3" type="Real" array="False" size=""/>
+            <input variable="AmountPerson3"/>
+            <declare name="SplitAmount" type="Real" array="False" size=""/>
+            <declare name="TotalAmountReceived" type="Real" array="False" size=""/>
+            <assign variable="TotalAmountReceived" expression="AmountPerson1+AmountPerson2+AmountPerson3"/>
+            <assign variable="SplitAmount" expression="TotalAmountReceived/3"/>
+            <output expression="&quot;Amount received by each person is $&quot;&amp;ToFixed(SplitAmount,2)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

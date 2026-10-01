@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alani"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-30 07:55:56 PM"/>
+        <attribute name="created" value="YWxhbmk7QUxBTklTOzIwMjYtMDktMzA7MDc6NDY6MzMgUE07MjI0Ng=="/>
+        <attribute name="edited" value="YWxhbmk7QUxBTklTOzIwMjYtMDktMzA7MDc6NTU6NTYgUE07MTsyMzU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="CircleRadius" type="Real" array="False" size=""/>
+            <input variable="CircleRadius"/>
+            <declare name="Area" type="Real" array="False" size=""/>
+            <declare name="Perimeter" type="Real" array="False" size=""/>
+            <assign variable="Area" expression="3.14*CircleRadius*CircleRadius"/>
+            <assign variable="Perimeter" expression="2*3.14*CircleRadius"/>
+            <output expression="&quot;Area of a circle is &quot; &amp;Area &amp;&quot;. &quot; &#13;&#10;&amp; &quot;Perimeter of a circle is &quot; &amp;Perimeter" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

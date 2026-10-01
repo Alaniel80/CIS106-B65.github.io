@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alani"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-30 08:44:41 PM"/>
+        <attribute name="created" value="YWxhbmk7QUxBTklTOzIwMjYtMDktMzA7MDg6MDQ6NDAgUE07MjIzOQ=="/>
+        <attribute name="edited" value="YWxhbmk7QUxBTklTOzIwMjYtMDktMzA7MDg6NDQ6NDEgUE07MjsyMzUz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Make" type="String" array="False" size=""/>
+            <declare name="Model" type="String" array="False" size=""/>
+            <declare name="MSRPamount" type="Real" array="False" size=""/>
+            <declare name="DiscountPercent" type="Real" array="False" size=""/>
+            <input variable="Make"/>
+            <input variable="Model"/>
+            <input variable="MSRPamount"/>
+            <input variable="DiscountPercent"/>
+            <declare name="AmountOff" type="Real" array="False" size=""/>
+            <declare name="DiscountedPrice" type="Real" array="False" size=""/>
+            <assign variable="AmountOff" expression="MSRPamount*(DiscountPercent/100)"/>
+            <assign variable="DiscountedPrice" expression="MSRPamount-AmountOff"/>
+            <output expression="&quot;Make: &quot; &amp;Make&#13;&#10;&amp;&quot; Model: &quot; &amp;Model&#13;&#10;&amp;&quot; MSRPamount: $&quot;&amp;MSRPamount&#13;&#10;&amp;&quot; DiscountPercent: &quot;&amp;DiscountPercent&#13;&#10;&amp;&quot; AmountOff: $&quot;&amp;AmountOff&#13;&#10;&amp;&quot; DiscountedPrice: $&quot;&amp;DiscountedPrice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
