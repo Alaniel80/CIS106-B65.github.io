@@ -1,4 +1,4 @@
-#   Input information
+#Input information
 amount1=float(input("Enter amount received by 1st person: "))
 amount2=float(input("Enter amount received by 2nd person: "))
 amount3=float(input("Enter amount received by 3rd person: "))
