@@ -4,6 +4,6 @@ shares=float(input("Enter number of shares: "))
 cost=float(input("Enter number of sdhares: "))
 #Compute amount invested
 amount_invested=shares*cost
-#Display the results
+#Display the result
 print("Amount invested into ",stock,"is ${:.2f}".format(amount_invested))
             
