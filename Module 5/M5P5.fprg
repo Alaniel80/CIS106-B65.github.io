@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M5P5"/>
+        <attribute name="authors" value="alani"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-11 12:02:41 PM"/>
+        <attribute name="created" value="YWxhbmk7QUxBTklTOzIwMjYtMTAtMTE7MTE6NDM6MTcgQU07MjIxNg=="/>
+        <attribute name="edited" value="YWxhbmk7QUxBTklTOzIwMjYtMTAtMTE7MTI6MDI6NDEgUE07MjsyMzMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="LastName" type="String" array="False" size=""/>
+            <input variable="LastName"/>
+            <declare name="DependNumber" type="Integer" array="False" size=""/>
+            <input variable="DependNumber"/>
+            <declare name="GrossIncome" type="Real" array="False" size=""/>
+            <input variable="GrossIncome"/>
+            <declare name="AdjGrossIncome" type="Real" array="False" size=""/>
+            <assign variable="AdjGrossIncome" expression="GrossIncome-DependNumber*12000"/>
+            <declare name="TaxRate" type="Real" array="False" size=""/>
+            <if expression="AdjGrossIncome&gt;50000">
+                <then>
+                    <assign variable="TaxRate" expression="20"/>
+                </then>
+                <else>
+                    <assign variable="TaxRate" expression="10"/>
+                </else>
+            </if>
+            <declare name="IncomeTax" type="Real" array="False" size=""/>
+            <assign variable="IncomeTax" expression="AdjGrossIncome*TaxRate/100"/>
+            <if expression="IncomeTax&lt;0">
+                <then>
+                    <assign variable="IncomeTax" expression="100"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;LastName: &quot; &amp;LastName &amp;&quot; Gross Income: $&quot; &amp;GrossIncome &amp; &quot; Number of dependents: &quot; &amp;DependNumber &amp; &quot; Adjusted Gross Income: $&quot; &amp;AdjGrossIncome &amp; &quot; Income tax: $&quot; &amp;IncomeTax" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

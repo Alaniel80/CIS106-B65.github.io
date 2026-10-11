@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M5P3"/>
+        <attribute name="authors" value="alani"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-11 10:31:00 AM"/>
+        <attribute name="created" value="YWxhbmk7QUxBTklTOzIwMjYtMTAtMTE7MTA6MTI6NTIgQU07MjIxMA=="/>
+        <attribute name="edited" value="YWxhbmk7QUxBTklTOzIwMjYtMTAtMTE7MTA6MzE6MDAgQU07MTsyMzEy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NumberOfBooks" type="Integer" array="False" size=""/>
+            <input variable="NumberOfBooks"/>
+            <declare name="CostPerBook" type="Real" array="False" size=""/>
+            <input variable="CostPerBook"/>
+            <declare name="TotalCost" type="Integer" array="False" size=""/>
+            <assign variable="TotalCost" expression="NumberOfBooks*CostPerBook"/>
+            <declare name="Shipping" type="Real" array="False" size=""/>
+            <if expression="TotalCost&gt;=50">
+                <then>
+                    <assign variable="Shipping" expression="0"/>
+                </then>
+                <else>
+                    <assign variable="Shipping" expression="25"/>
+                </else>
+            </if>
+            <output expression="&quot;Order Total: $&quot; &amp;TotalCost &amp; &quot; Sphipping Charge: $&quot; &amp;Shipping" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
