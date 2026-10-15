@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M6P4"/>
+        <attribute name="authors" value="alani"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-14 08:07:02 PM"/>
+        <attribute name="created" value="YWxhbmk7QUxBTklTOzIwMjYtMTAtMTQ7MDc6NTY6MDQgUE07MjIzOQ=="/>
+        <attribute name="edited" value="YWxhbmk7QUxBTklTOzIwMjYtMTAtMTQ7MDg6MDc6MDIgUE07MTsyMzQy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NumberTickets" type="Integer" array="False" size=""/>
+            <input variable="NumberTickets"/>
+            <declare name="TotalCost" type="Real" array="False" size=""/>
+            <declare name="PricePerTicket" type="Real" array="False" size=""/>
+            <if expression="NumberTickets&gt;=25">
+                <then>
+                    <assign variable="PricePerTicket" expression="50"/>
+                </then>
+                <else>
+                    <if expression="10&lt;=NumberTickets AND NumberTickets&lt;=24">
+                        <then>
+                            <assign variable="PricePerTicket" expression="60"/>
+                        </then>
+                        <else>
+                            <if expression="5&lt;=NumberTickets AND NumberTickets&lt;=9">
+                                <then>
+                                    <assign variable="PricePerTicket" expression="70"/>
+                                </then>
+                                <else>
+                                    <assign variable="PriceperTicket" expression="75"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="TotalCost" expression="NumberTickets*PricePerTicket"/>
+            <output expression="&quot;Number of Tickets:&quot; &amp;NumberTickets &amp; &quot; Price Per Ticket:$&quot; &amp;PricePerTicket &amp;&quot; Total Cost:$&quot; &amp;TotalCost" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
