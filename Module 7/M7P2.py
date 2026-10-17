@@ -1,4 +1,4 @@
-#Iana Vasileva  CIS 160 B65    M7P1   10/16/26
+#Iana Vasileva  CIS 160 B65    M7P2   10/16/26
 #User's input
 start_value=int(input("Enter starting value: "))
 end_value=int(input("Enter ending value: "))
