@@ -1,0 +1,11 @@
+Stout
+48000.00
+Johnson
+60000.00
+Townsend
+55000.00
+Ortiz
+45000.00
+Padilla
+83000.00
+

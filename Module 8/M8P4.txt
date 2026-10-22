@@ -1,0 +1,15 @@
+Pencil
+20
+3
+Pen
+25
+4
+Notebook
+51
+7
+File
+48
+2
+Notepad
+32
+5
