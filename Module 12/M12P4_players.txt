@@ -1,0 +1,10 @@
+John  0.250
+Smith 0.315
+Malone 0.265
+Barrington 0.299
+King 0.310
+Anderson 0.283
+Townsend 0.305
+Lee 0.300
+Miller 0.278
+Robinson 0.288
