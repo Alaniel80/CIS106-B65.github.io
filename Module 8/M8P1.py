@@ -11,25 +11,26 @@ print("Interest rate:", int_rate)
 balance = principal
 total_interest = 0
 
-#Display 2: year, beginning and ending balances.
+# Display 2: year, beginning and ending balances.
 print()
-print("Year     Beginning       Ending")
-print("           balance       balance")
+print(f"{'Year':<8}{'Beginning Balance':<22}{'Ending Balance':<20}")
+print("-" * 50)
 
-#Loop for
+# Loop for 5 years
 for i in range(1, 6):
     beginning_balance = balance
     interest = beginning_balance * int_rate
     ending_balance = beginning_balance + interest
     total_interest = total_interest + interest
 
-#Display 3:year, beginning balance and ending balance for each of the first 5 years.
-    print(f"{i}        ${beginning_balance:,.2f}      ${ending_balance:,.2f}")
+    # Display 3: year, beginning balance and ending balance
+    print(f"{i:<8}${beginning_balance:<21,.2f}${ending_balance:<20,.2f}")
 
-#the new balance by year (this will be the principle for the following year)
+    # The new balance by year
     balance = ending_balance
 
-#Display 4: total interest earned
+# Display 4: total interest earned
+print("-" * 50)
 print(f"Total interest earned: ${total_interest:,.2f}")
 
 
