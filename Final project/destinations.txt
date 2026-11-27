@@ -1,0 +1,2 @@
+['Usa', 'Chicago', 7, 'Car', 2000.0]
+['Russia', 'Moscow', 14, 'Plane', 5000.0]
