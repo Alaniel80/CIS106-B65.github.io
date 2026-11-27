@@ -1,4 +1,4 @@
-#Iana Vasileva  CIS160 B65   Final project 11/27/26
+#Iana Vasileva  CIS106 B65   Final project 11/27/26
 #Travel tracker application
 #Stores up to 5 records about travel destinations
 #The user can add, view, find, delete travel destinations and saves the record to a file when finished
