@@ -1,0 +1,4 @@
+['Alex', 'German Shepherd', 9, 25.0]
+['Tommy', 'Poodle', 7, 18.8]
+['Ginger', 'Beagle', 7, 12.0]
+['Sunny', 'Labrador', 4, 21.9]
